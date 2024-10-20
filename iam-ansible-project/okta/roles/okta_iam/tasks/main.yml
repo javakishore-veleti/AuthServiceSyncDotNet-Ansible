@@ -1,0 +1,16 @@
+--- 
+- name: Create Okta application
+  uri:
+    url: '{{ okta_org_url }}/api/v1/apps'
+    method: POST
+    headers:
+      Authorization: 'SSWS {{ okta_api_token }}'
+      Content-Type: 'application/json'
+    body_format: json
+    body:
+      label: '{{ okta_app_name }}'
+      signOnMode: 'OPENID_CONNECT'
+      settings:
+        oauthClient:
+          client_uri: '{{ okta_app_uri }}'
+    status_code: 200

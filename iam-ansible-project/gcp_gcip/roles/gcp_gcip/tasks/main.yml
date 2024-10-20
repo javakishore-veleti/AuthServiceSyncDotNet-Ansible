@@ -1,0 +1,7 @@
+--- 
+- name: Create GCP Identity Platform application
+  gcp_identity:
+    name: '{{ gcp_app_name }}'
+    project: '{{ gcp_project }}'
+    state: present
+  delegate_to: localhost

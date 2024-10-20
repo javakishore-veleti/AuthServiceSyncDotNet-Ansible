@@ -1,0 +1,6 @@
+--- 
+- name: Create Okta Resources
+  hosts: okta
+  gather_facts: no
+  roles:
+    - okta_iam

@@ -1,0 +1,6 @@
+--- 
+- name: Create AWS IAM Resources
+  hosts: aws_iam
+  gather_facts: no
+  roles:
+    - aws_iam

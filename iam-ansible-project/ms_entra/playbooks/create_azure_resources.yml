@@ -1,0 +1,6 @@
+--- 
+- name: Create Microsoft Entra Resources
+  hosts: ms_entra
+  gather_facts: no
+  roles:
+    - azure_ad

@@ -1,0 +1,6 @@
+--- 
+- name: Create GCP GCIP Resources
+  hosts: gcp_gcip
+  gather_facts: no
+  roles:
+    - gcp_gcip

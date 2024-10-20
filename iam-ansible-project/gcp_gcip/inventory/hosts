@@ -1,0 +1,2 @@
+[gcp_gcip]
+localhost ansible_connection=local

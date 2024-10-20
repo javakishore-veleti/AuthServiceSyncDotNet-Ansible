@@ -1,0 +1,9 @@
+--- 
+- name: Create IAM Role in AWS
+  aws_iam_role:
+    name: '{{ aws_iam_role_name }}'
+    assume_role_policy_document: '{{ iam_trust_policy }}'
+    state: present
+    region: '{{ aws_region }}'
+    aws_access_key: '{{ aws_access_key }}'
+    aws_secret_key: '{{ aws_secret_key }}'

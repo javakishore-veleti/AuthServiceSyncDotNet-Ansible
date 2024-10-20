@@ -1,0 +1,2 @@
+gcp_project: '<your_gcp_project>'
+gcp_app_name: 'GCPApp'

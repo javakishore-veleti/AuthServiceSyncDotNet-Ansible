@@ -1,0 +1,13 @@
+--- 
+- name: Create Azure AD application
+  azure.azcollection.azure_ad_application:
+    display_name: '{{ azure_app_name }}'
+    identifier_uris:
+      - '{{ azure_app_uri }}'
+    password_credential:
+      display_name: 'AppCredential'
+      end_date: '2025-01-01T00:00:00Z'
+    tenant: '{{ azure_tenant }}'
+    client_id: '{{ azure_client_id }}'
+    secret: '{{ azure_secret }}'
+    subscription_id: '{{ azure_subscription_id }}'

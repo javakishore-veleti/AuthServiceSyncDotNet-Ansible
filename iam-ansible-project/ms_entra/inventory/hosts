@@ -1,0 +1,2 @@
+[ms_entra]
+localhost ansible_connection=local
